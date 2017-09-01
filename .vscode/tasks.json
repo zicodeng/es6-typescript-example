@@ -1,0 +1,22 @@
+// vscode task set up for TypeScript compiler.
+{
+    "version": "0.1.0",
+
+    // Command vscode will be using.
+    "command": "tsc",
+
+    // The command is a shell script.
+    "isShellCommand": true,
+
+    // Additional flags.
+    "args": ["-w", "-p", "."],
+
+    // Show the output window only if unrecognized errors occur.
+    "showOutput": "silent",
+
+    // Watch file changes.
+    "isWatching": true,
+
+    // Use the standard tsc problem watcher to find compile problems in the output.
+    "problemMatcher": "$tsc-watch"
+}
